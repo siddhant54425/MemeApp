@@ -1,13 +1,122 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+* {
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  font-family: 'Ysabeau Infant', sans-serif;
+  margin: 0;
+}
+
+main {
+  padding: 40px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  height: 65px;
+  background: linear-gradient(90deg, #672280 1.60%, #d37f26 120%);
+  color: white;
+  padding: 20px;
+}
+
+.header--image{
+  height: 150%;
+  margin-right: 10px;
+}
+
+.header--title {
+  font-size: 1.50rem;
+  margin-right: auto;
+  font-weight: 700;
+}
+
+.header--project {
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.memeimg {
+  width: 24px;
+  margin-left: 20px;
+}
+
+.form {
+  display: grid;
+  grid-template: 40px 40px / 1fr 1fr;
+  gap: 16px;
+}
+
+.form--input {
+  font-family: 'Ysabeau Infant', sans-serif;
+  border-radius: 5px;
+  border: 1px solid #D5D4D8;
+  text-indent: 2px;
+  font-size: 1rem;
+}
+
+.form--button {
+  grid-column: 1 / -1;
+  font-family: 'Ysabeau Infant', sans-serif;
+  border-radius: 24px;
+  border: None;
+  background: linear-gradient(90deg, #9152a8 1.60%, #b88248 120%);
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.form--button:hover {
+  background: linear-gradient(90deg, #672280 1.60%, #d37f26 120%);
+}
+
+.inside--button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.meme--image {
+  max-width: 100%;
+  border-radius: 5px;
+  display: flex;
+  margin: 16px auto;
+}
+
+.meme {
+  position: relative;
+}
+
+.meme--text {
+  position: absolute;
+  width: 80%;
+  text-align: center;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 15px 0;
+  padding: 0 5px;
+  font-family: Impact, sans-serif;
+  font-size: 2em;
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: 1px;
+  text-shadow: 2px 2px 0 #000,
+  -2px -2px 0 #000,
+  2px -2px 0 #000,
+  -2px 2px 0 #000,
+  0 2px 0 #000,
+  2px 0 0 #000,
+  0 -2px 0 #000,
+  -2px 0 0 #000,
+  2px 2px 5px #000;
+}
+
+.bottom {
+  bottom: 0;
+}
+
+.top {
+  top: 0;
 }
